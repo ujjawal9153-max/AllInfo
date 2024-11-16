@@ -1,7 +1,7 @@
-import { Heading } from "./components/heading"
-import { Maxwidthwrapper } from "./components/maxwidthwrapper"
+import { Heading } from "@/components/heading"
+import { Maxwidthwrapper } from "@/components/maxwidthwrapper"
 import { Check, Star } from "lucide-react"
-import { Shinybutton } from "./components/shiny-button"
+import { Shinybutton } from "@/components/shiny-button"
 const Page =()=>{
   return (
   <>
