@@ -51,6 +51,18 @@ export const Navbar=()=>{
                 >
                   Sign in
                 </Link>
+           
+
+                <Link
+                  href="/sign-up"
+                  className={buttonVariants({
+                    size: "sm",
+                    className: "flex items-center gap-1.5",
+                  })}
+                >
+                  Sign up <ArrowRight className="size-4" />
+                </Link>
+              
                                 </>
                             )
                         }
