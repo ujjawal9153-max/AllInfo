@@ -1,9 +1,10 @@
 import { Maxwidthwrapper } from "./maxwidthwrapper"
 import Link from "next/link"
 import{SignOutButton} from "@clerk/nextjs"
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
+import { ArrowRight, Flag } from "lucide-react";
 export const Navbar=()=>{
-    const user =false;
+    const user = false;
 
     return(
         <nav className="sticky z-[100] h-16 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all">
@@ -16,12 +17,42 @@ export const Navbar=()=>{
                         {
                             user ? <>
                             <SignOutButton>
-                                <Button>
-                                    
+                                <Button size="sm" variant="ghost">
+                                    Sign out
                                 </Button>
                             </SignOutButton>
+                            <Link
+                  href="/dashboard"
+                  className={buttonVariants({
+                    size: "sm",
+                    className: "flex items-center gap-1",
+                  })}
+                >
+                  Dashboard <ArrowRight className="ml-1.5 size-4" />
+                </Link>
 
-                            </>:null
+                            </>:(
+                                <>
+                                 <Link
+                  href="/pricing"
+                  className={buttonVariants({
+                    size: "sm",
+                    variant: "ghost",
+                  })}
+                >
+                  Pricing
+                </Link>
+                <Link
+                  href="/sign-in"
+                  className={buttonVariants({
+                    size: "sm",
+                    variant: "ghost",
+                  })}
+                >
+                  Sign in
+                </Link>
+                                </>
+                            )
                         }
                     </div>
                 </div>
