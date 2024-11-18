@@ -53,7 +53,7 @@ export const Navbar= async()=>{
                   Sign in
                 </Link>
            
-                <div className="h-8 w-px bg-gray-200" />
+               
                 <Link
                   href="/sign-up"
                   className={buttonVariants({
