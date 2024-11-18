@@ -3,8 +3,9 @@ import Link from "next/link"
 import{SignOutButton} from "@clerk/nextjs"
 import { Button, buttonVariants } from "./ui/button";
 import { ArrowRight, Flag } from "lucide-react";
-export const Navbar=()=>{
-    const user = false;
+import { currentUser } from "@clerk/nextjs/server";
+export const Navbar= async()=>{
+    const user = await currentUser();
 
     return(
         <nav className="sticky z-[100] h-16 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all">
@@ -52,7 +53,7 @@ export const Navbar=()=>{
                   Sign in
                 </Link>
            
-
+                <div className="h-8 w-px bg-gray-200" />
                 <Link
                   href="/sign-up"
                   className={buttonVariants({
