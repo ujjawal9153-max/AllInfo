@@ -57,8 +57,9 @@ Start Today
     
   </Maxwidthwrapper>
  </section>
+
  <section className="relative bg-brand-25 pb-4">
-  <div className="absolute inset-x-0 bottom-24 top-24 bg-brand-700">
+  <div className="absolute inset-x-0 bottom-24 top-24 bg-brand-700"/>
     <div className="relative mx-auto">
       <Maxwidthwrapper className="relative">
         <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
@@ -113,10 +114,25 @@ Start Today
       </Maxwidthwrapper>
 
     </div>
-  </div>
+ 
 
   </section> 
- <section></section>
+ <section className="relative py-24 sm:py-32 bg-brand-25">
+  <Maxwidthwrapper className="flex flex-col items-center gap-16 sm:gap-20">
+    <div>
+    <h2 className="text-center text-base/7 font-semibold text-brand-600">
+              Intuitive Monitoring
+            </h2>
+            <Heading>Stay ahead with real-time insights</Heading>
+
+    </div>
+    <div>
+      <div>
+
+      </div>
+    </div>
+  </Maxwidthwrapper>
+ </section>
  <section></section>
   </>
   )
