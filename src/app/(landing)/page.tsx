@@ -50,7 +50,7 @@ const Page =()=>{
 
             <ul className="space-y-2 text-base/7 text-gray-600 text-left flex flex-col items-start">
               {[
-"Real-time Discord alerts for critical events",
+               "Real-time Discord alerts for critical events",
                 "Buy once, use forever",
                 "Track sales, new users, or any other event",
                 "Easy Access"
