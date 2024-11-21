@@ -2,7 +2,7 @@
 import { db } from "@/db"
 import { j } from "./__internals/j"
 import { currentUser } from "@clerk/nextjs/server"
-import { HTTPException } from "hono/http-exception"
+import { HTTPException } from "hono/http-exception" 
 /**
  * Middleware for providing a built-in cache with your Prisma database.
  *
