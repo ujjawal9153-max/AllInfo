@@ -1,7 +1,7 @@
 import { currentUser } from "@clerk/nextjs/server";
 import { db } from "@/db"
 import { redirect } from "next/navigation"
-import { DashboardPage } from "@/components/discord-page";
+import { DashboardPage } from "@/components/dashboard-page";
 import { CreateEventCategoryModal } from "@/components/create-event-category-modal";
 import { PlusIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";

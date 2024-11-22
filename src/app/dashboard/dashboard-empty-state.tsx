@@ -21,8 +21,10 @@ export const DashboardEmptyState = () => {
     <Card className="flex flex-col items-center justify-center rounded-2xl flex-1 text-center p-6">
       <div className="flex justify-center w-full">
         <Image
-          src="/user-1.png"
+          src="/server.png"
           alt="image"
+          width={100}
+          height={30}
           className="size-48 -mt-24"
         />
       </div>
@@ -42,7 +44,7 @@ export const DashboardEmptyState = () => {
           onClick={() => insertQuickstartCategories()}
           disabled={isPending}
         >
-          <span className="size-5">🚀</span>
+          <span className="size-5">🤩</span>
           <span>{isPending ? "Creating..." : "Quickstart"}</span>
         </Button>
 
