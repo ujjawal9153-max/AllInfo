@@ -307,7 +307,7 @@ Start Today
                 <Star className="size-5 text-brand-600 fill-brand-600" />
               </div>
               <p className="text-base sm:text-lg lg:text-lg/8 font-medium tracking-tight text-brand-950 text-center lg:text-left text-pretty">
-                AllInfo has been a game-changer for me. I've been using it for
+                AllInfo has been a game-changer for me. I&apos;ve been using it for
                 two months now and seeing sales pop up in real-time is super
                 satisfying.
               </p>
