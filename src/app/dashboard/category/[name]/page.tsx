@@ -6,7 +6,7 @@ import { CategoryPageContent } from "./category-page-content"
 
 interface PageProps {
   params: {
-    name: string 
+    name: string | string[] | undefined
   }
 }
 
