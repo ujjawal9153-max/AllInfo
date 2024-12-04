@@ -10,7 +10,7 @@ import Image from "next/image"
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { Icons } from "@/components/icons"
 const Page =()=>{
-  const codeSnippet = `await fetch("http://localhost:3000/api/v1/events", {
+  const codeSnippet = `await fetch("https://all-info-by-ujjwalsinha.vercel.app/api/v1/events", {
     method: "POST",
     body: JSON.stringify({
       category: "sale",
@@ -40,7 +40,7 @@ const Page =()=>{
         </Heading>
       </div>
       <p className="text-base/7 text-gray-600 max-w-prose text-center text-pretty">
-              AllInfo is the easiest way to monitor your SaaS Prodict . Get instant
+              AllInfo is the easiest way to monitor your SaaS Product . Get instant
               notifications for{" "}
               <span className="font-semibold text-gray-700">
                 sales, new users, financial update or any other event

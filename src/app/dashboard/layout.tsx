@@ -9,6 +9,7 @@ import Link from "next/link"
 import { PropsWithChildren, useState } from "react"
 import { Drawer } from "vaul"
 
+
 interface SidebarItem {
   href: string
   icon: LucideIcon
@@ -21,6 +22,10 @@ interface SidebarCategory {
 }
 
 const SIDEBAR_ITEMS: SidebarCategory[] = [
+  {
+  category:"Home",
+  items:[{href:"/", icon: Home, text: "Home"}]
+  },
   {
     category: "Overview",
     items: [{ href: "/dashboard", icon: Home, text: "Dashboard" }],
@@ -46,7 +51,7 @@ const Sidebar = ({ onClose }: { onClose?: () => void }) => {
   return (
     <div className="space-y-4 md:space-y-6 relative z-20 flex flex-col h-full">
       {/* logo */}
-      <p  className="hidden sm:block text-lg/7 font-semibold text-brand-900">
+      <p  className="hidden sm:block text-lg/7 font-semibold text-brand-900 ">
         All<span className="text-brand-700">Info</span>
       </p>
 
